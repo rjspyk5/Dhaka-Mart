@@ -1,8 +1,10 @@
+
 <h1 class="text-center font-bold text-2xl" style="margin-top: 30px">Products Table</h1>
 <div class="overflow-x-auto w-full">
 
     <table class="custom-table">
     
+
         <!-- head -->
         <div style="display: flex; justify-content:end; margin:0 80px 20px 0;">
                 <!-- Open the modal using ID.showModal() method -->
