@@ -1,5 +1,5 @@
-<h1 class="text-center font-bold text-2xl">Products Table</h1>
-<div class="overflow-x-auto w-full">
+<h1 class="text-center font-bold text-2xl test">Products Table</h1>
+<div class="overflow-x-auto w-full ">
     <table class="table table-zebra w-full">
         <!-- head -->
         <thead>
