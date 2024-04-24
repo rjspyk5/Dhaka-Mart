@@ -91,7 +91,6 @@
                 <th>Discount</th>
                 <th>Present Price</th>
                 <th>Action</th>
-                <th></th>
             </tr>
         </thead>
     <tbody>
@@ -106,9 +105,11 @@
             <td>
 
                 <!-- You can open the modal using ID.showModal() method -->
-                <button  onclick="my_modal_3.showModal()">
-                    <i style="color:green; font-size:20px;" class="fa-regular fa-pen-to-square"></i>
-                </button>
+                <div class="tooltip" data-tip="Edit">
+                    <button  onclick="my_modal_3.showModal()">
+                        <i style="color:green; font-size:20px;" class="fa-regular fa-pen-to-square"></i>
+                    </button>
+                </div>
 
                             <!-- Edit Product Modal -->
 
@@ -182,13 +183,20 @@
                         </div>
                     </div>
                 </dialog>
-                        
-                <a href=""><i style="color:red; font-size:20px; margin-left: 10px" class="fa-regular fa-trash-can"></i></a>
 
-            </td>
-            <td>
-                <button class="view-details" onclick="my_modal_2.showModal()"> 
-                <i class="fa-regular fa-eye"></i> View Details</button>
+
+                        <!-- Delete Button -->
+                   
+                <div class="tooltip" data-tip="Delete">        
+                    <a href=""><i style="color:red; font-size:20px; margin-left: 10px" class="fa-regular fa-trash-can"></i></a>
+                </div>
+
+                
+                <div class="tooltip" data-tip="Details">     
+                    <button onclick="my_modal_2.showModal()"> 
+                        <i style="color:#007bff; font-size:20px; margin-left:10px;" class="fa-regular fa-eye"></i> 
+                    </button>
+                </div>    
 
                                 <!-- View Details Modal -->
                                 
@@ -233,9 +241,6 @@
                     </div>
                 </dialog>
 
-
-
-
             </td>
         </tr>
         <!-- row 2 -->
@@ -247,14 +252,12 @@
             <td>Purple</td>
             <td>Purple</td>
             <td>Purple</td>
-            <td>Purple</td>
         </tr>
         <!-- row 3 -->
         <tr>
             <th>3</th>
             <td>Brice Swyre</td>
             <td>Tax Accountant</td>
-            <td>Red</td>
             <td>Red</td>
             <td>Red</td>
             <td>Red</td>
