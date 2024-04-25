@@ -11,7 +11,7 @@
                 <button class="btn view-details" onclick="my_modal_1.showModal()">
                 <i class="fa-regular fa-square-plus"></i> Add Product</button>
 
-                                <!-- Add Product Modal -->
+                                <!-- Add Product Modal ttt-->
 
                 <dialog id="my_modal_1" class="modal " >
                     <div class="modal-box " style="max-width:800px;">
