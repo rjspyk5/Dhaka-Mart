@@ -1,6 +1,6 @@
 <div class="navbar bg-[#0F172A]">
     <div class="flex-1">
-        <a href="index.php" class="btn btn-ghost text-xl text-[white]">RTMS.Bazar</a>
+        <a href="index.php" class="btn btn-ghost text-xl text-[white] font-rancho">Dhaka Mart</a>
     </div>
     <div class="flex-none">
         <div class="dropdown dropdown-end">
