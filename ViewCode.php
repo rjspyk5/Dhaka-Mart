@@ -1,9 +1,6 @@
 <?php
-
 $conn = mysqli_connect('localhost', 'root', '', 'dhakamart');
-
 if (isset($_POST['add_product'])) {
-
     $image = $_POST['image'];
     $name = $_POST['name'];
     $previous_price = $_POST['previous_price'];
@@ -14,22 +11,16 @@ if (isset($_POST['add_product'])) {
     $sub_category = $_POST['sub_category'];
     $unit = $_POST['unit'];
     $coupon = $_POST['coupon'];
-
-
     $sql = "INSERT INTO product ( image, name, previous_price, discount, present_price, brand, category, sub_category, unit, coupon)
     VALUES ( '$image', '$name',' $previous_price','$discount', '$present_price', '$brand', '$category', '$sub_category', '$unit', '$coupon')";
-
     $query_run = mysqli_query($conn, $sql);
-
     if ($query_run) {
-
         header('Location:index.php?page=viewproduct');
         exit;
     } else {
         echo "Error: " . mysqli_error($conn);
     }
 }
-
 if (isset($_POST['update'])) {
     $id = $_POST["id"];
     $image = $_POST['image'];
@@ -47,7 +38,6 @@ if (isset($_POST['update'])) {
     $query_run = mysqli_query($conn, $sql);
 
     if ($query_run) {
-
         header('Location:index.php?page=viewproduct');
         exit;
     } else {

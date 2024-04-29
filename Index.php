@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['admin'])) {
+    header("location:login.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 
@@ -12,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
@@ -19,11 +31,9 @@
     <style>
         <?php include "style.css" ?>
     </style>
-
 </head>
 
 <body>
-
 
     <?php require("./Shared/Navbar.php"); ?>
     <div class="flex">
@@ -37,9 +47,13 @@
                 } elseif ($_GET["page"] === "viewproduct") {
                     require("ViewProduct.php");
                 } elseif ($_GET["page"] === "viewdetails") {
-                    require(".ProductDetails.php");
+                    require("ProductDetails.php");
                 } elseif ($_GET["page"] === "edit") {
                     require("EditProduct.php");
+                } elseif ($_GET["page"] === "order") {
+                    require("Order.php");
+                } elseif ($_GET["page"] === "user") {
+                    require("User.php");
                 }
             } else {
                 require("Dashboard.php");

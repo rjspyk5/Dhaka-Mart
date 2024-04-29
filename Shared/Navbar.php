@@ -1,4 +1,4 @@
-<div class="navbar bg-[#0F172A]">
+<div class="navbar sticky top-0 z-50 bg-[#0F172A]">
     <div class="flex-1">
         <a href="index.php" class="btn btn-ghost text-xl text-[white] font-rancho">Dhaka Mart</a>
     </div>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li><a>Password</a></li>
-                <li><a>Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>
     </div>
