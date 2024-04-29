@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
-    <script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-</script>
-<!-- custom css file -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <!-- custom css file -->
     <style>
         <?php include "style.css" ?>
     </style>
@@ -33,16 +33,16 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
             <?php
             if (isset($_GET["page"])) {
                 if ($_GET["page"] === "dashboard") {
-                    require("./Pages/Dashboard.php");
+                    require("Dashboard.php");
                 } elseif ($_GET["page"] === "viewproduct") {
-                    require("./Pages/ViewProduct.php");
+                    require("ViewProduct.php");
                 } elseif ($_GET["page"] === "viewdetails") {
-                    require("./Pages/ProductDetails.php");
+                    require(".ProductDetails.php");
                 } elseif ($_GET["page"] === "edit") {
-                    require("./Pages/EditProduct.php");
+                    require("EditProduct.php");
                 }
             } else {
-                require("./Pages/Dashboard.php");
+                require("Dashboard.php");
             }
             ?>
         </div>

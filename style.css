@@ -29,60 +29,6 @@
             
             
             
-            /* Products Details Table */
-            
-            .styled-table {
-              width: 100%;
-              border-collapse: collapse;
-            }
-            
-            .styled-table th, .styled-table td {
-              border: 1px solid #ddd;
-              padding: 8px;
-              text-align: left;
-            }
-            
-            .styled-table th {
-              background-color: #007bff;
-              color: white;
-            }
-            
-            .styled-table tbody tr:nth-child(even) {
-              background-color: #f2f2f2;
-            }
-            
-            .styled-table tbody tr:hover {
-              background-color: #ddd;
-            }
-            
-            
-            
-            
-            /* Table Styles */
-            .styled-table {
-              width: 100%;
-              border-collapse: collapse;
-            }
-            
-            .styled-table th, .styled-table td {
-              border: 1px solid #ddd;
-              padding: 8px;
-              text-align: left;
-            }
-            
-            .styled-table th {
-              background-color: #007bff;
-              color: white;
-            }
-            
-            .styled-table tbody tr:nth-child(even) {
-              background-color: #f2f2f2;
-            }
-            
-            .styled-table tbody tr:hover {
-              background-color: #ddd;
-            }
-            
             /* Button Styles */
             .add-product-btn {
               text-align: right;
