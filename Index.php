@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaka-Martt</title>
+    <title>Mart-Dhaka</title>
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,7 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- custom css file -->
+    
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<!-- custom css file -->
     <style>
         <?php include "style.css" ?>
     </style>
@@ -26,7 +29,7 @@
     <div class="flex">
 
         <?php require("./Shared/Sidebar.php") ?>
-        <div class="w-full">
+        <div class="w-full mx-4 py-5">
             <?php
             if (isset($_GET["page"])) {
                 if ($_GET["page"] === "dashboard") {
